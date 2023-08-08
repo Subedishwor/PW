@@ -78,36 +78,99 @@
 		<p style="color:white; font-size:20px;"><strong>Ishwor Subedi</strong></p>
 		<p style="color:white;"><em>Student</em></p>
 		<p style="color:white;"><small>subedishwor00@gmail.com</small></p>
-                <script>
-  // Array of quotes
-  var quotes = [
-    "The only limit to our realization of tomorrow will be our doubts of today.",
-    "The best way to predict the future is to create it.",
-    "In the middle of every difficulty lies opportunity.",
-    "Believe you can and you're halfway there.",
-    "Life is a one-time offer. Use it well." ,
-    "Life is a balance of holding on and letting go.",
-   "Be yourself; everyone else is already taken." ,
-   "The only limit is your mind." ,
+ <script>
+    var quotes = [
+    
+   "The best way to predict the future is to create it.",
+      "In the middle of every difficulty lies opportunity.",
+   "Believe you can and you're halfway there.",
+   "Life is a one-time offer. Use it well." ,
+   "Life is a balance of holding on and letting go.",
+  "Be yourself; everyone else is already taken." ,
+  "The only limit is your mind." ,
    "Do or do not, there is no try." ,
-   "Dream big and dare to fail." ,
-  "Life is short, make it sweet." ,
-  "To be the best, you must be able to handle the worst." ,
-  "Inhale courage, exhale fear." 
-  ];
+    "Dream big and dare to fail." ,
+    "To be the best, you must be able to handle the worst." ,
+   "Inhale courage, Exhale fear.",
+    "Stay focused and never give up." ,
+    "Dreams don't work unless you do." ,
+    "Keep your eyes on the prize." ,
+    "Success is the sum of small efforts, repeated day in and day out." ,
+     "The future depends on what you do today." ,
+     "Stay determined and keep moving forward.",
+     "Chase your goals relentlessly.",
+     "Focus on your goal, not on the obstacles.",
+     "Every step counts towards your goal.",
+     "Don't just wish for it, work for it.",
+      "Stay committed, even when it's tough.",
+      "Goals: The fuel for your journey.",
+      "Small steps, big dreams.",
+      "Your goals, your path, your success.",
+      "Strive for progress, not perfection.",
 
-  // Function to change the quote
-  function changeQuote() {
-    var randomIndex = Math.floor(Math.random() * quotes.length);
-    document.getElementById("quote").textContent = quotes[randomIndex];
-  }
 
-  // Initial quote change
-  changeQuote();
+   ];
+    
+     var currentQuoteIndex = 0;
 
-  // Set interval to change quote every 10 seconds
-  setInterval(changeQuote, 5000);
-		</script>
+    function changeQuote() {
+      var quoteElement = document.getElementById("quote");
+      quoteElement.textContent = quotes[currentQuoteIndex];
+
+      currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+    }
+
+    setInterval(changeQuote, 4000); // Change quote every 5 seconds
+  </script>
+
+  <div id="quote"><i><b>"Life is short, make it sweet."</i></p></div>
+		 <script>
+    var quotes = [
+    
+   "The best way to predict the future is to create it.",
+      "In the middle of every difficulty lies opportunity.",
+   "Believe you can and you're halfway there.",
+   "Life is a one-time offer. Use it well." ,
+   "Life is a balance of holding on and letting go.",
+  "Be yourself; everyone else is already taken." ,
+  "The only limit is your mind." ,
+   "Do or do not, there is no try." ,
+    "Dream big and dare to fail." ,
+    "To be the best, you must be able to handle the worst." ,
+   "Inhale courage, Exhale fear.",
+    "Stay focused and never give up." ,
+    "Dreams don't work unless you do." ,
+    "Keep your eyes on the prize." ,
+    "Success is the sum of small efforts, repeated day in and day out." ,
+     "The future depends on what you do today." ,
+     "Stay determined and keep moving forward.",
+     "Chase your goals relentlessly.",
+     "Focus on your goal, not on the obstacles.",
+     "Every step counts towards your goal.",
+     "Don't just wish for it, work for it.",
+      "Stay committed, even when it's tough.",
+      "Goals: The fuel for your journey.",
+      "Small steps, big dreams.",
+      "Your goals, your path, your success.",
+      "Strive for progress, not perfection.",
+
+
+   ];
+    
+     var currentQuoteIndex = 0;
+
+    function changeQuote() {
+      var quoteElement = document.getElementById("quote");
+      quoteElement.textContent = quotes[currentQuoteIndex];
+
+      currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+    }
+
+    setInterval(changeQuote, 4000); // Change quote every 5 seconds
+  </script>
+
+  <div id="quote"><i><b>"Life is short, make it sweet."</i></p></div>
+		
 		<div class="social-media">
 			<nav>
 				<a href="https://www.facebook.com/1ntrovertt"><i class="fab fa-facebook"></i></a>
