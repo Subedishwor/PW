@@ -78,7 +78,36 @@
 		<p style="color:white; font-size:20px;"><strong>Ishwor Subedi</strong></p>
 		<p style="color:white;"><em>Student</em></p>
 		<p style="color:white;"><small>subedishwor00@gmail.com</small></p>
-                <p style="color:white;"><i><b>"Don't just exist, explore."</b></i></p>
+                <script>
+  // Array of quotes
+  var quotes = [
+    "The only limit to our realization of tomorrow will be our doubts of today.",
+    "The best way to predict the future is to create it.",
+    "In the middle of every difficulty lies opportunity.",
+    "Believe you can and you're halfway there.",
+    "Life is a one-time offer. Use it well." ,
+    "Life is a balance of holding on and letting go.",
+   "Be yourself; everyone else is already taken." ,
+   "The only limit is your mind." ,
+   "Do or do not, there is no try." ,
+   "Dream big and dare to fail." ,
+  "Life is short, make it sweet." ,
+  "To be the best, you must be able to handle the worst." ,
+  "Inhale courage, exhale fear." 
+  ];
+
+  // Function to change the quote
+  function changeQuote() {
+    var randomIndex = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quote").textContent = quotes[randomIndex];
+  }
+
+  // Initial quote change
+  changeQuote();
+
+  // Set interval to change quote every 10 seconds
+  setInterval(changeQuote, 5000);
+		</script>
 		<div class="social-media">
 			<nav>
 				<a href="https://www.facebook.com/1ntrovertt"><i class="fab fa-facebook"></i></a>
